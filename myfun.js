@@ -55,7 +55,7 @@ function myfun(code, input){
 function findFuckingBracket(code){
     var bracketMatch = [];
     var stack = [];
-    for(let i = 0; i < code.length; i++){
+    for(var i = 0; i < code.length; i++){
         if(code[i] === '[')
             stack.push(i);
         if(code[i] === ']'){
