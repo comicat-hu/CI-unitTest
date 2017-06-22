@@ -4,9 +4,9 @@ var myfun = require('../myfun.js')
 var assert = chai.assert;
 
 describe('myfun', function(){
-    it('should return 3', function(){
-        var x = myfun(1, 2);
+    it('should return Hello World!\\n', function(){
+        var x = myfun('++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.' , '');
 
-        assert.equal(x, 3);
+        assert.equal(x, 'Hello World!\n');
     });
 });
