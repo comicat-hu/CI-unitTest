@@ -59,7 +59,7 @@ function findFuckingBracket(code){
         if(code[i] === '[')
             stack.push(i);
         if(code[i] === ']'){
-            let temp = stack.pop();
+            var temp = stack.pop();
             bracketMatch[i] = temp;
             bracketMatch[temp] = i;
         }
