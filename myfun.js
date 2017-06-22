@@ -5,7 +5,7 @@ function myfun(code, input){
     var inp = 0;
     var bracketMatch = findFuckingBracket(code);
 
-    for(let ip = 0; ip < code.length; ip++){
+    for(var ip = 0; ip < code.length; ip++){
 
         switch(code[ip]){
             case '>':
