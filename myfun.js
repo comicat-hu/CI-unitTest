@@ -5,7 +5,7 @@ function myfun(code, input){
     var inp = 0;
     var bracketMatch = findFuckingBracket(code);
 
-    for(var ip = 0; ip < code.length; ip++){
+    for(let ip = 0; ip < code.length; ip++){
 
         switch(code[ip]){
             case '>':
@@ -55,11 +55,11 @@ function myfun(code, input){
 function findFuckingBracket(code){
     var bracketMatch = [];
     var stack = [];
-    for(var i = 0; i < code.length; i++){
+    for(let i = 0; i < code.length; i++){
         if(code[i] === '[')
             stack.push(i);
         if(code[i] === ']'){
-            var temp = stack.pop();
+            let temp = stack.pop();
             bracketMatch[i] = temp;
             bracketMatch[temp] = i;
         }
